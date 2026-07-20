@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
 body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #FCEBEC !important;
@@ -1425,7 +1424,163 @@ section.about-2.py-5 {
         text-align: left;
     }
 
-    .about-1 p.box-desc{
+    .about-1 p.box-desc {
         text-align: left;
+    }
+}
+
+/* Message Page */
+
+.message-1 .image {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.message-1 .image img.img-fluid {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+}
+
+.message-1 .image::before {
+    content: "";
+    background-color: #000041;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 20px;
+}
+
+.message-1 h2.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000f30;
+    margin-top: 16px;
+}
+
+.message-1 .quote{
+    border-left: 2px solid #E31E24;
+    padding-left: 20px;
+}
+
+.message-1 p.section-desc{
+    margin-top: 36px;
+    text-align: justify;
+}
+
+.message-1 .content{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.message-1 .signboard{
+    padding-top: 20px;
+}
+
+.message-1 .signboard .name{
+    color: #000041;
+    font-weight: 700;
+}
+
+.message-1 .signboard .role{
+    color: #E31E24;
+}
+
+/* ==========================================================================
+   Chairman's Message Page - Responsive Fixes (small display to large display)
+   The base .message-1 .image rule above is now fluid (width:100%,
+   max-width:420px) so the photo can never exceed its Bootstrap column,
+   which is what caused it to bleed over the text at 110% zoom and other
+   in-between widths. On a normal wide desktop the column is already wider
+   than 420px, so the photo still renders at the original 420px - no visual
+   change there. These media queries just fine-tune spacing/type size below.
+   ========================================================================== */
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .message-1 .image {
+        max-width: 340px;
+        margin-bottom: 30px;
+    }
+
+    .message-1 .image::before {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .message-1 h2.section-title {
+        font-size: 26px;
+        margin-top: 12px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .message-1 .image {
+        max-width: 300px;
+    }
+
+    .message-1 h2.section-title {
+        font-size: 24px;
+    }
+
+    .message-1 p.section-desc {
+        font-size: 15px;
+        line-height: 26px;
+        margin-top: 24px;
+    }
+
+    .message-1 .quote {
+        padding-left: 16px;
+    }
+
+    .message-1 .signboard {
+        padding-top: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .message-1 .image {
+        max-width: 260px;
+        margin-bottom: 24px;
+    }
+
+    .message-1 .image::before {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .message-1 h2.section-title {
+        font-size: 21px;
+    }
+
+    .message-1 .badge {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (>100%) */
+@media (max-width: 400px) {
+    .message-1 .image {
+        max-width: 220px;
+    }
+
+    .message-1 .image::before {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .message-1 h2.section-title {
+        font-size: 19px;
+    }
+
+    .message-1 p.section-desc {
+        font-size: 14px;
+        line-height: 24px;
     }
 }

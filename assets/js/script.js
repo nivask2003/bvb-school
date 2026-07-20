@@ -3,6 +3,15 @@
     const prevBtn = document.querySelector('.facilities__btn--prev');
     const nextBtn = document.querySelector('.facilities__btn--next');
 
+    // Only run the facilities carousel logic if all required elements exist
+    // on the current page (e.g. facilities.php). This prevents a
+    // TypeError on pages like about.php that don't have this carousel,
+    // which would otherwise stop the rest of this script (including
+    // the IntersectionObserver code and AOS.init() below) from running.
+    if (!track || !prevBtn || !nextBtn) {
+      return;
+    }
+
     function updateEdges() {
       prevBtn.disabled = track.scrollLeft <= 4;
       nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
@@ -39,3 +48,12 @@ const observer = new IntersectionObserver((entries) => {
 boxes.forEach(box => {
   observer.observe(box);
 });
+
+
+
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 100
+  });

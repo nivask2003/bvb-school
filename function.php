@@ -22,6 +22,7 @@ function template_header($title){
             <link rel="manifest" href="Assets/Images/site.webmanifest">
             <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
         </head>
 
         <body>
@@ -183,6 +184,9 @@ function template_footer(){
         </div>
     </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    </body>
+    </html>
     EOT;
 }

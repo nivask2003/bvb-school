@@ -6,11 +6,11 @@
 <section class=" about-1 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-5 col-lg-5">
+            <div class="col-12 col-md-5 col-lg-5" data-aos="fade-right">
                 <img src="assets/images/about-1.webp" alt="" class="img-fluid">
                 <div class="box"></div>
             </div>
-            <div class="col-12 col-md-7 col-lg-7">
+            <div class="col-12 col-md-7 col-lg-7" data-aos="fade-left">
                 <span class="badge">About Us</span>
                 <h2 class="section-title">Building Futures Through Learning</h2>
                 <p class="section-desc">Bhaarath Vidhya Bhavan Matriculation Higher Secondary School is a leading
@@ -20,7 +20,7 @@
                     and holistic development, empowering every student to excel with confidence and integrity.
                 </p>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up">
                         <ul class="icon-list">
                             <li class="list">
                                 <div class="icon-circle">
@@ -42,7 +42,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="150">
                         <ul class="icon-list">
                             <li class="list">
                                 <div class="icon-circle">
@@ -72,16 +72,16 @@
 </section>
 <section class="about-2 py-5">
     <div class="container">
-        <span class="badge text-danger">History & Establishment</span>
-        <h2 class="section-title">History That Shapes Our Future</h2>
-        <p class="section-desc">Founded in 1999, Bhaarath Vidhya Bhavan Matriculation Higher Secondary School was established with the vision of providing quality education to students from rural and semi-urban communities. Managed by the Bharath Educational Trust, the institution has grown into one of Palani's respected schools, earning the trust of parents through academic excellence, disciplined learning, and a strong commitment to nurturing knowledgeable, confident, and responsible individuals.</p>
-        <p class="section-desc">Over the years, the school has expanded its infrastructure with modern classrooms, laboratories, hostel facilities, sports amenities, and diverse co-curricular opportunities. Blending traditional values with innovative teaching practices, Bhaarath Vidhya Bhavan continues to foster academic achievement, leadership, integrity, compassion, and life skills, preparing students to excel in higher education and become responsible citizens in a rapidly changing world.</p>
+        <span class="badge text-danger" data-aos="fade-down">History & Establishment</span>
+        <h2 class="section-title" data-aos="fade-down">History That Shapes Our Future</h2>
+        <p class="section-desc" data-aos="fade-up">Founded in 1999, Bhaarath Vidhya Bhavan Matriculation Higher Secondary School was established with the vision of providing quality education to students from rural and semi-urban communities. Managed by the Bharath Educational Trust, the institution has grown into one of Palani's respected schools, earning the trust of parents through academic excellence, disciplined learning, and a strong commitment to nurturing knowledgeable, confident, and responsible individuals.</p>
+        <p class="section-desc" data-aos="fade-up" data-aos-delay="150">Over the years, the school has expanded its infrastructure with modern classrooms, laboratories, hostel facilities, sports amenities, and diverse co-curricular opportunities. Blending traditional values with innovative teaching practices, Bhaarath Vidhya Bhavan continues to foster academic achievement, leadership, integrity, compassion, and life skills, preparing students to excel in higher education and become responsible citizens in a rapidly changing world.</p>
     </div>
 </section>
 <section class="about-3 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right">
                 <ul class="icon-list">
                     <li class="list">
                         <div class="icon-circle">
@@ -115,7 +115,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left">
                 <img src="assets/images/about-2.webp" alt="" class="img-fluid">
             </div>
         </div>
@@ -123,7 +123,7 @@
 </section>
 <section class="about-4 py-5">
     <div class="container">
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <h2 class="section-title">Our Educational Philosophy</h2>
             <p class="section-desc">We believe education is more than acquiring knowledge; it is the process of shaping character, confidence, and lifelong values. Every child has unique talents and limitless potential, and we strive to nurture these strengths through engaging, meaningful learning experiences. By blending academic excellence with discipline, integrity, creativity, cultural awareness, and compassion, we prepare students to become responsible citizens, confident leaders, and lifelong learners who positively contribute to society. always!..</p>
         </div>
@@ -132,10 +132,10 @@
 <section class="about-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 image">
+            <div class="col-12 col-md-6 col-lg-6 image" data-aos="fade-right">
                 <img src="assets/images/aims.webp" alt="" class="img-fluid">
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left">
                 <span class="badge">Aims & Objectives</span>
                 <h2 class="section-title">Our Commitment to Excellence</h2>
                 <p class="section-desc">Bhaarath Vidhya Bhavan provides a comprehensive educational experience that inspires students to excel in every stage of life. We build strong academic foundations while nurturing confidence, leadership, integrity, creativity, and social responsibility. Our approach encourages scientific thinking, effective communication, sportsmanship, environmental awareness, patriotism, and cultural values. By recognising every learner's unique potential and providing equal opportunities, we prepare students to meet higher education and the changing world with confidence, competence, and a lifelong passion for learning while embracing innovation every day always.</p>
@@ -145,13 +145,13 @@
 </section>
 <section class="about-6 py-5">
     <div class="container">
-        <div class="heading-center">
+        <div class="heading-center" data-aos="fade-down">
             <span class="badge">School Spirit</span>
             <h2 class="section-title">The Spirit of Our School</h2>
            
         </div>
          <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right">
                         <ul class="image-box">
                             <li class="list">
                                 <div class="image">
@@ -164,7 +164,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left">
                         <ul class="image-box">
                             <li class="list">
                                 <div class="image">
