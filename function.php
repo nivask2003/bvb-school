@@ -74,8 +74,8 @@ function template_header($title){
                                             About
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                                            <li><a class="dropdown-item" href="#">Principal Message</a></li>
+                                            <li><a class="dropdown-item" href="about.php">About Us</a></li>
+                                            <li><a class="dropdown-item" href="chairman-message.php">Chairman's Message</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
