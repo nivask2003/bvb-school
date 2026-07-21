@@ -76,7 +76,12 @@ function template_header($title){
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="about.php">About Us</a></li>
+                                            <li><a class="dropdown-item" href="trustee.php">Board of Trustees</a></li>
                                             <li><a class="dropdown-item" href="chairman-message.php">Chairman's Message</a></li>
+                                            <li><a class="dropdown-item" href="trustee-message.php">Management Trustee's Message </a></li>
+                                            <li><a class="dropdown-item" href="secretary-message.php">Secretary's Message</a></li>
+                                            <li><a class="dropdown-item" href="principal-message .php">Principal's Message </a></li>
+                                            <li><a class="dropdown-item" href="administrative-message.php">Administrative Officer's Message  </a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -98,7 +103,7 @@ function template_header($title){
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="facilities.php" tabindex="-1" aria-disabled="true">Gallery</a>
+                                        <a class="nav-link" href="gallery.php" tabindex="-1" aria-disabled="true">Gallery</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -107,11 +112,11 @@ function template_header($title){
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Career Guidance</a></li>
-                                            <li><a class="dropdown-item" href="#">Career Form</a></li>
+                                            <li><a class="dropdown-item" href="career-form.php">Career Form</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="facilities.php" tabindex="-1" aria-disabled="true">Contact</a>
+                                        <a class="nav-link" href="contact.php" tabindex="-1" aria-disabled="true">Contact</a>
                                     </li>
                                 </ul>
                             </div>

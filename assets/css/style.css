@@ -1584,3 +1584,631 @@ section.about-2.py-5 {
         line-height: 24px;
     }
 }
+
+/* Trustee Page */
+
+.trustee-1 p.section-desc {
+    text-align: center;
+    width: 580px;
+    max-width: 100%;
+}
+
+.trustee-1 ul.image-box {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trustee-1 ul.image-box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 190px;
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.trustee-1 ul.image-box .box .image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.trustee-1 ul.image-box .box .image img.img-fluid {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.35s ease;
+}
+
+.trustee-1 ul.image-box .box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 65, 0.15);
+    background-color: #fff;
+}
+
+.trustee-1 ul.image-box .box:hover .image img.img-fluid {
+    transform: scale(1.05);
+}
+
+.trustee-1 ul.image-box .box .content h4.name {
+    text-align: center;
+    font-weight: 600;
+    color: #000041;
+    font-size: 19px;
+}
+
+.trustee-1 ul.image-box .box .content p.role {
+    text-align: center;
+    color: #E31E24;
+}
+
+/* ==========================================================================
+   Trustee Page - Responsive Fixes (small display to large display,
+   including in-between widths caused by browser zoom above/below 100%)
+   ========================================================================== */
+
+/* Large desktops / wide screens */
+@media (min-width: 1400px) {
+    .trustee-1 ul.image-box .box {
+        max-width: 242px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .trustee-1 ul.image-box .box {
+        flex: 1 1 170px;
+        max-width: 200px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .trustee-1 p.section-desc {
+        width: 100%;
+    }
+
+    .trustee-1 ul.image-box {
+        gap: 16px;
+    }
+
+    .trustee-1 ul.image-box .box {
+        flex: 1 1 150px;
+        max-width: 180px;
+        gap: 14px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .trustee-1 ul.image-box {
+        gap: 14px;
+    }
+
+    .trustee-1 ul.image-box .box {
+        flex: 1 1 130px;
+        max-width: 160px;
+        padding: 8px;
+    }
+
+    .trustee-1 ul.image-box .box .content h4.name {
+        font-size: 16px;
+    }
+
+    .trustee-1 ul.image-box .box .content p.role {
+        font-size: 14px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .trustee-1 ul.image-box {
+        gap: 12px;
+    }
+
+    .trustee-1 ul.image-box .box {
+        flex: 1 1 42%;
+        max-width: 46%;
+        gap: 10px;
+        padding: 6px;
+    }
+
+    .trustee-1 ul.image-box .box:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Extra small phones / heavy browser zoom (>100%) */
+@media (max-width: 400px) {
+    .trustee-1 ul.image-box .box {
+        flex: 1 1 100%;
+        max-width: 220px;
+    }
+}
+
+/* Contact Page */
+
+.contact-1 ul.icon-box {
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-1 ul.icon-box li.box{
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+.contact-1 ul.icon-box li.box h4{
+    color: #000041;
+    font-weight: 700;
+}
+
+.contact-1 ul.icon-box li.box .icon-circle {
+    background: #000041;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 50%;
+}
+
+.contact-1 a {
+    color: #E31E24;
+    text-decoration: none;
+}
+
+.contact-1 a:hover{
+    color: #000041;
+}
+
+.contact-1 ul.icon-box li.box .icon-circle {
+    transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.contact-1 ul.icon-box li.box:hover .icon-circle {
+    background-color: #E31E24;
+    transform: scale(1.05);
+}
+
+.contac-2 .contact-2__map-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contac-2 .contact-2__map-wrap iframe {
+    display: block;
+}
+
+/* ==========================================================================
+   Contact Page - Responsive Fixes (small display to large display,
+   including in-between widths caused by browser zoom above/below 100%)
+   ========================================================================== */
+
+/* Large desktops / wide screens */
+@media (min-width: 1400px) {
+    .contact-1 ul.icon-box li.box .icon-circle {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .contact-1 ul.icon-box li.box .icon-circle {
+        width: 58px;
+        height: 58px;
+        font-size: 26px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .contact-1 ul.icon-box li.box {
+        padding-top: 16px;
+    }
+
+    .contac-2 .contact-2__map-wrap {
+        margin-top: 16px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .contact-1 ul.icon-box li.box {
+        gap: 14px;
+        padding-top: 14px;
+    }
+
+    .contact-1 ul.icon-box li.box .icon-circle {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .contact-1 ul.icon-box li.box h4 {
+        font-size: 18px;
+    }
+
+    .contac-2 .contact-2__map-wrap iframe {
+        height: 320px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .contact-1 ul.icon-box li.box {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .contact-1 ul.icon-box li.box .icon-circle {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .contact-1 ul.icon-box li.box .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .contac-2 .contact-2__map-wrap iframe {
+        height: 260px;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (>100%) */
+@media (max-width: 400px) {
+    .contact-1 ul.icon-box li.box .icon-circle {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .contact-1 ul.icon-box li.box h4 {
+        font-size: 16px;
+    }
+
+    .contac-2 .contact-2__map-wrap iframe {
+        height: 220px;
+    }
+}
+
+/* Gallery Page */
+
+.gallery-1 .gallery-filter-btn {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.gallery-1 .gallery-container img.img-fluid {
+    border-radius: 20px;
+}
+
+.gallery-1 .gallery-container .col-12.col-md-3.col-lg-3 {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-1 .gallery-container .overlay{
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    height: 100%;
+    background-color: #000041a1;
+    border-radius: 20px;
+    display: none;
+    align-items: flex-end;
+    padding: 20px;
+    
+
+}
+
+.gallery-1 .gallery-container .col-12.col-md-3.col-lg-3:hover .overlay{
+    display: flex;
+}
+
+.gallery-1 .gallery-container .overlay h4{
+    color: #fff;
+}
+.gallery-1 .gallery-container .overlay .btn{
+    background-color: #fff !important;
+    color: #000041 !important;
+    border-radius: 50% !important;
+    padding: 16px !important;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+        bottom: 137px;
+    right: 16px;
+}
+
+/* Gallery filter buttons - active state (kept consistent with existing .btn hover color) */
+.gallery-1 .gallery-filter-btn .btn {
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gallery-1 .gallery-filter-btn .btn.active,
+.gallery-1 .gallery-filter-btn .btn:hover {
+    background-color: #C41820 !important;
+}
+
+/* Limited hover animation on gallery items (subtle, doesn't change layout) */
+.gallery-1 .gallery-container .gallery-item {
+    cursor: pointer;
+}
+
+.gallery-1 .gallery-container .gallery-item img.img-fluid {
+    transition: transform 0.35s ease;
+}
+
+.gallery-1 .gallery-container .gallery-item:hover img.img-fluid {
+    transform: scale(1.03);
+}
+
+.gallery-1 .gallery-container .overlay {
+    transition: opacity 0.3s ease;
+}
+
+.gallery-1 .gallery-container .overlay .btn {
+    transition: transform 0.25s ease;
+}
+
+.gallery-1 .gallery-container .gallery-item:hover .overlay .btn {
+    transform: scale(1.08);
+}
+
+.gallery-1 .gallery-empty-msg {
+    text-align: center;
+    color: #000041;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Lightbox */
+.gallery-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 21, 0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-lightbox.active {
+    display: flex;
+}
+
+.gallery-lightbox__content {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    animation: lightboxFadeIn 0.3s ease;
+}
+
+.gallery-lightbox__content img {
+    max-width: 100%;
+    max-height: 78vh;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.gallery-lightbox__content h4 {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.gallery-lightbox__close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 2001;
+    transition: color 0.2s ease;
+}
+
+.gallery-lightbox__close:hover {
+    color: #E31E24;
+}
+
+.gallery-lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 10px 16px;
+    z-index: 2001;
+    transition: color 0.2s ease;
+}
+
+.gallery-lightbox__nav:hover {
+    color: #E31E24;
+}
+
+.gallery-lightbox__prev {
+    left: 16px;
+}
+
+.gallery-lightbox__next {
+    right: 16px;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+@keyframes lightboxFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ==========================================================================
+   Gallery Page - Responsive Fixes (small display to large display,
+   including in-between widths caused by browser zoom above/below 100%)
+   Desktop (md/lg and up) layout/design is untouched.
+   ========================================================================== */
+
+/* Large desktops / wide screens - unchanged design, just spacing safeguard */
+@media (min-width: 1400px) {
+    .gallery-1 .gallery-container .row {
+        row-gap: 30px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .gallery-1 .gallery-container .row {
+        row-gap: 24px;
+    }
+
+    .gallery-1 .gallery-container .overlay .btn {
+        width: 48px;
+        height: 48px;
+        padding: 14px !important;
+        bottom: 122px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .gallery-1 .gallery-filter-btn {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .gallery-1 .gallery-container .row {
+        row-gap: 20px;
+    }
+
+    .gallery-1 .gallery-container .overlay .btn {
+        bottom: 108px;
+    }
+
+    .gallery-lightbox__nav {
+        font-size: 26px;
+        padding: 8px 12px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) - 2 columns instead of 1 */
+@media (max-width: 767.98px) {
+    .gallery-1 .gallery-filter-btn {
+        gap: 10px;
+    }
+
+    .gallery-1 .gallery-filter-btn .btn {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        font-size: 14px;
+    }
+
+    .gallery-1 .gallery-container .row {
+        row-gap: 16px;
+    }
+
+    .gallery-1 .gallery-container .overlay h4 {
+        font-size: 16px;
+    }
+
+    .gallery-1 .gallery-container .overlay .btn {
+        width: 42px;
+        height: 42px;
+        padding: 10px !important;
+        bottom: 84px;
+        right: 12px;
+    }
+
+    .gallery-lightbox__close {
+        top: 16px;
+        right: 20px;
+        font-size: 22px;
+    }
+}
+
+/* Small phones - single column */
+@media (max-width: 575.98px) {
+    .gallery-1 .gallery-filter-btn {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 6px;
+    }
+
+    .gallery-1 .gallery-container .overlay {
+        width: 91%;
+    }
+
+    .gallery-1 .gallery-container .overlay .btn {
+        bottom: 100px;
+    }
+
+    .gallery-lightbox__content h4 {
+        font-size: 17px;
+    }
+
+    .gallery-lightbox__nav {
+        font-size: 22px;
+        padding: 6px 10px;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (>100%) */
+@media (max-width: 400px) {
+    .gallery-1 .gallery-filter-btn .btn {
+        font-size: 13px;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .gallery-1 .gallery-container .overlay h4 {
+        font-size: 14px;
+    }
+
+    .gallery-1 .gallery-container .overlay .btn {
+        width: 38px;
+        height: 38px;
+        padding: 8px !important;
+        bottom: 78px;
+    }
+
+    .gallery-lightbox__content h4 {
+        font-size: 15px;
+    }
+}
