@@ -91,7 +91,7 @@ function template_header($title){
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="curriculam.php"">Curriculam</a></li>
-                                            <li><a class="dropdown-item" href="">Board of Trustees</a></li>
+                                            <li><a class="dropdown-item" href="academics-excellence.php">Academic Excellence</a></li>
                                             <li><a class="dropdown-item" href="chairman-message.php">Chairman's Message</a></li>
                                             <li><a class="dropdown-item" href="trustee-message.php">Management Trustee's Message </a></li>
                                             <li><a class="dropdown-item" href="secretary-message.php">Secretary's Message</a></li>

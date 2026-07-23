@@ -2506,3 +2506,203 @@ body.lightbox-open {
         transition: none !important;
     }
 }
+
+/* Curriculam Page */
+
+.curr-1 .box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.curr-1 .box p.box-desc {
+    text-align: justify;
+}
+
+.curr-1 .box img.img-fluid{
+    border-radius: 20px;
+}
+
+.curr-1 #left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curr-1 .box h4.box-title {
+    font-weight: 700;
+    color: #000041;
+}
+
+.curr-1 #right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curr-1 #right ul.icon-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.curr-1 #right ul.icon-list .list{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.curr-1 #right ul.icon-list .list i{
+    font-size: 20px;
+    color: #000041;
+}
+
+.curr-1 #right ul.icon-list .list a{
+    color: #E31E24;
+    text-decoration: none;
+}
+
+.curr-1 #right ul.icon-list .list a:hover{
+    color: #000041;
+}
+
+.modal-dialog .modal-content .modal-body p {
+    text-align: justify !important;
+}
+
+/* ==========================================================================
+   Curriculam Page - Responsive
+   (Desktop layout/design left untouched; only breakpoints below
+   the current desktop layout, plus browser zoom > 100%, are adjusted)
+   ========================================================================== */
+
+/* Ensure box images scale cleanly at every size without changing desktop look */
+.curr-1 .box .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Large desktops / wide screens (zoom below 100% effectively lands here) */
+@media (min-width: 1400px) {
+    .curr-1 .box {
+        padding: 24px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .curr-1 .box {
+        padding: 18px;
+    }
+
+    .curr-1 .box h4.box-title {
+        font-size: 20px;
+    }
+
+    .curr-1 .box p.box-desc {
+        font-size: 15px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .curr-1 #left,
+    .curr-1 #right {
+        gap: 16px;
+    }
+
+    .curr-1 #right {
+        margin-top: 16px;
+    }
+
+    .curr-1 .box h4.box-title {
+        font-size: 19px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md - image stacks above content) */
+@media (max-width: 767.98px) {
+    .curr-1 .box .row>div {
+        margin-bottom: 12px;
+    }
+
+    .curr-1 .box .row>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .curr-1 .box .image img {
+        border-radius: 16px;
+    }
+
+    .curr-1 .box h4.box-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .curr-1 .box p.box-desc {
+        font-size: 14.5px;
+        line-height: 1.6;
+    }
+
+    .curr-1 #right ul.icon-list .list a {
+        font-size: 14.5px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .curr-1.py-5 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+
+    .curr-1 .box {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .curr-1 .box h4.box-title {
+        font-size: 17px;
+    }
+
+    .curr-1 .box p.box-desc {
+        font-size: 14px;
+    }
+
+    .curr-1 #right ul.icon-list .list i {
+        font-size: 18px;
+    }
+
+    .curr-1 #right ul.icon-list .list a {
+        font-size: 14px;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (above 100%) */
+@media (max-width: 400px) {
+    .curr-1 .box {
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .curr-1 .box h4.box-title {
+        font-size: 16px;
+    }
+
+    .curr-1 .box p.box-desc {
+        font-size: 13px;
+    }
+
+    .curr-1 #right ul.icon-list .list {
+        gap: 8px;
+    }
+
+    .curr-1 #right ul.icon-list .list i {
+        font-size: 16px;
+    }
+
+    .curr-1 #right ul.icon-list .list a {
+        font-size: 13px;
+    }
+}
