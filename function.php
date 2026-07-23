@@ -84,9 +84,20 @@ function template_header($title){
                                             <li><a class="dropdown-item" href="administrative-message.php">Administrative Officer's Message  </a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="academics.php" tabindex="-1"
-                                            aria-disabled="true">Academics</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Academics
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="curriculam.php"">Curriculam</a></li>
+                                            <li><a class="dropdown-item" href="">Board of Trustees</a></li>
+                                            <li><a class="dropdown-item" href="chairman-message.php">Chairman's Message</a></li>
+                                            <li><a class="dropdown-item" href="trustee-message.php">Management Trustee's Message </a></li>
+                                            <li><a class="dropdown-item" href="secretary-message.php">Secretary's Message</a></li>
+                                            <li><a class="dropdown-item" href="principal-message .php">Principal's Message </a></li>
+                                            <li><a class="dropdown-item" href="administrative-message.php">Administrative Officer's Message  </a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="facilities.php" tabindex="-1"
@@ -148,7 +159,7 @@ function template_footer(){
                 <ul class="footer-links">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
-                    <li><a href="academics.php">Academics</a></li>
+                    <li><a href="academics-overview.php">Academics</a></li>
                     <li><a href="facilities.php">Facilities</a></li>
                     <li><a href="gallery.php">Gallery</a></li>
                     <li><a href="contact.php">Contact</a></li>

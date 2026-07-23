@@ -59,4 +59,73 @@ boxes.forEach(box => {
   });
 
 
+  /* ==========================================================================
+   Facilities Page - Vanilla JS
+   ========================================================================== */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    /* Init scroll animations */
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80
+        });
+    }
+
+    /* Keep card heights perfectly equal per row, even if an image
+       fails to load or content wraps to an extra line. */
+    var equalizeCardHeights = function () {
+        var cards = document.querySelectorAll('.facility-card__body');
+        cards.forEach(function (card) {
+            card.style.minHeight = 'auto';
+        });
+
+        if (window.innerWidth < 768) {
+            return; // single column on mobile, no need to equalize
+        }
+
+        var maxHeight = 0;
+        cards.forEach(function (card) {
+            maxHeight = Math.max(maxHeight, card.offsetHeight);
+        });
+
+        cards.forEach(function (card) {
+            card.style.minHeight = maxHeight + 'px';
+        });
+    };
+
+    equalizeCardHeights();
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(equalizeCardHeights, 150);
+    });
+
+    /* Refresh AOS once images finish loading, so layout shifts
+       don't leave animations triggering at the wrong offset. */
+    var images = document.querySelectorAll('.facility-card__image');
+    var loadedCount = 0;
+
+    images.forEach(function (img) {
+        if (img.complete) {
+            loadedCount++;
+        } else {
+            img.addEventListener('load', function () {
+                loadedCount++;
+                if (loadedCount === images.length) {
+                    equalizeCardHeights();
+                    if (typeof AOS !== 'undefined') {
+                        AOS.refresh();
+                    }
+                }
+            });
+        }
+    });
+
+});
+
   

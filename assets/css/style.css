@@ -2212,3 +2212,297 @@ body.lightbox-open {
         font-size: 15px;
     }
 }
+
+/* Facilities Page */
+
+/* ==========================================================================
+   Facilities Page
+   Built on top of the existing design system in style.css
+   (colors: var(--navy) #0D1B3E / var(--red) #E31E24 / var(--white) #FFFFFF,
+   typography: Cinzel for headings, Poppins for body, .page-banner,
+   .heading-center, span.badge and h2.section-title left untouched)
+   ========================================================================== */
+
+/* ---------- Intro / Hero (badge + heading + short copy) ---------- */
+
+.facilities-1 {
+    padding-top: 120px;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle premium decoration: soft dotted pattern + thin accent shapes */
+.facilities-1::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 6%;
+    width: 160px;
+    height: 160px;
+    background-image: radial-gradient(var(--navy) 1.5px, transparent 1.5px);
+    background-size: 16px 16px;
+    opacity: 0.06;
+    pointer-events: none;
+}
+
+.facilities-1::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    bottom: -80px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--red), var(--navy));
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.facilities-1__intro {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.facilities-1__intro .badge {
+    background: rgba(227, 30, 36, 0.08);
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.facilities-1__heading {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.facilities-1__desc {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #4a5170;
+    margin-bottom: 0;
+}
+
+.facilities-1__accent-line {
+    width: 70px;
+    height: 3px;
+    background: var(--red);
+    border-radius: 3px;
+    margin: 0 auto 24px;
+}
+
+/* ---------- Cards grid section ---------- */
+
+.facilities-2 {
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+
+.facilities-2__container {
+    max-width: 1400px;
+}
+
+.facilities-2__row {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+}
+
+/* ---------- Facility card ---------- */
+
+.facility-card {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(13, 27, 62, 0.08);
+    border: 1px solid transparent;
+    transition: transform 350ms ease, box-shadow 350ms ease, border-color 350ms ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(13, 27, 62, 0.16);
+    border-color: var(--red);
+}
+
+.facility-card__image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 24px 24px 0 0;
+}
+
+.facility-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 350ms ease;
+}
+
+.facility-card:hover .facility-card__image {
+    transform: scale(1.08);
+}
+
+.facility-card__category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--white);
+    color: var(--red);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 50px;
+    box-shadow: 0 6px 16px rgba(13, 27, 62, 0.15);
+    display: none;
+}
+
+.facility-card__body {
+    padding: 28px 28px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-card__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 12px;
+    transition: color 350ms ease;
+}
+
+.facility-card:hover .facility-card__title {
+    color: var(--red);
+}
+
+.facility-card__desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5a6180;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/* Large desktops / wide screens */
+@media (min-width: 1400px) {
+    .facilities-2__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .facilities-1 {
+        padding-top: 96px;
+    }
+
+    .facilities-2 {
+        padding-top: 72px;
+        padding-bottom: 96px;
+    }
+
+    .facilities-1__heading {
+        font-size: 46px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .facilities-1 {
+        padding-top: 72px;
+    }
+
+    .facilities-2 {
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+
+    .facilities-1__heading {
+        font-size: 38px;
+    }
+
+    .facility-card__title {
+        font-size: 24px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .facilities-1 {
+        padding-top: 56px;
+    }
+
+    .facilities-2 {
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .facilities-2__row {
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 24px;
+    }
+
+    .facilities-1__heading {
+        font-size: 32px;
+    }
+
+    .facilities-1__desc {
+        font-size: 16px;
+    }
+
+    .facility-card__body {
+        padding: 22px 22px 26px;
+    }
+
+    .facility-card__title {
+        font-size: 22px;
+    }
+
+    .facility-card__desc {
+        font-size: 16px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .facilities-1__heading {
+        font-size: 28px;
+    }
+
+    .facilities-1__intro .badge {
+        padding: 7px 16px;
+    }
+
+    .facility-card__category {
+        top: 14px;
+        left: 14px;
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .facility-card,
+    .facility-card__image,
+    .facility-card__title {
+        transition: none !important;
+    }
+}
