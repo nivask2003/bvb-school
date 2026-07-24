@@ -1462,31 +1462,31 @@ section.about-2.py-5 {
     margin-top: 16px;
 }
 
-.message-1 .quote{
+.message-1 .quote {
     border-left: 2px solid #E31E24;
     padding-left: 20px;
 }
 
-.message-1 p.section-desc{
+.message-1 p.section-desc {
     margin-top: 36px;
     text-align: justify;
 }
 
-.message-1 .content{
+.message-1 .content {
     border-bottom: 2px solid #ddd;
     padding-bottom: 20px;
 }
 
-.message-1 .signboard{
+.message-1 .signboard {
     padding-top: 20px;
 }
 
-.message-1 .signboard .name{
+.message-1 .signboard .name {
     color: #000041;
     font-weight: 700;
 }
 
-.message-1 .signboard .role{
+.message-1 .signboard .role {
     color: #E31E24;
 }
 
@@ -1741,14 +1741,14 @@ section.about-2.py-5 {
     list-style-type: none;
 }
 
-.contact-1 ul.icon-box li.box{
+.contact-1 ul.icon-box li.box {
     display: flex;
     gap: 10px;
     border-bottom: 2px solid #ddd;
     padding-top: 20px;
 }
 
-.contact-1 ul.icon-box li.box h4{
+.contact-1 ul.icon-box li.box h4 {
     color: #000041;
     font-weight: 700;
 }
@@ -1770,7 +1770,7 @@ section.about-2.py-5 {
     text-decoration: none;
 }
 
-.contact-1 a:hover{
+.contact-1 a:hover {
     color: #000041;
 }
 
@@ -1906,7 +1906,7 @@ section.about-2.py-5 {
     transition: all 0.3s ease-in-out;
 }
 
-.gallery-1 .gallery-container .overlay{
+.gallery-1 .gallery-container .overlay {
     position: absolute;
     bottom: 0;
     width: 93%;
@@ -1916,18 +1916,19 @@ section.about-2.py-5 {
     display: none;
     align-items: flex-end;
     padding: 20px;
-    
+
 
 }
 
-.gallery-1 .gallery-container .col-12.col-md-3.col-lg-3:hover .overlay{
+.gallery-1 .gallery-container .col-12.col-md-3.col-lg-3:hover .overlay {
     display: flex;
 }
 
-.gallery-1 .gallery-container .overlay h4{
+.gallery-1 .gallery-container .overlay h4 {
     color: #fff;
 }
-.gallery-1 .gallery-container .overlay .btn{
+
+.gallery-1 .gallery-container .overlay .btn {
     background-color: #fff !important;
     color: #000041 !important;
     border-radius: 50% !important;
@@ -1935,7 +1936,7 @@ section.about-2.py-5 {
     width: 54px;
     height: 54px;
     position: absolute;
-        bottom: 137px;
+    bottom: 137px;
     right: 16px;
 }
 
@@ -2519,7 +2520,7 @@ body.lightbox-open {
     text-align: justify;
 }
 
-.curr-1 .box img.img-fluid{
+.curr-1 .box img.img-fluid {
     border-radius: 20px;
 }
 
@@ -2534,7 +2535,7 @@ body.lightbox-open {
     color: #000041;
 }
 
-.curr-1 #right{
+.curr-1 #right {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -2545,24 +2546,24 @@ body.lightbox-open {
     padding: 0;
 }
 
-.curr-1 #right ul.icon-list .list{
+.curr-1 #right ul.icon-list .list {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
     align-items: center;
 }
 
-.curr-1 #right ul.icon-list .list i{
+.curr-1 #right ul.icon-list .list i {
     font-size: 20px;
     color: #000041;
 }
 
-.curr-1 #right ul.icon-list .list a{
+.curr-1 #right ul.icon-list .list a {
     color: #E31E24;
     text-decoration: none;
 }
 
-.curr-1 #right ul.icon-list .list a:hover{
+.curr-1 #right ul.icon-list .list a:hover {
     color: #000041;
 }
 
@@ -2607,6 +2608,7 @@ body.lightbox-open {
 
 /* Tablets */
 @media (max-width: 991.98px) {
+
     .curr-1 #left,
     .curr-1 #right {
         gap: 16px;
@@ -2705,4 +2707,346 @@ body.lightbox-open {
     .curr-1 #right ul.icon-list .list a {
         font-size: 13px;
     }
+}
+
+.academic-ex-1 .box {
+    background: #fff;
+    border-radius: 20px;
+}
+
+.academic-ex-1 .box .content {
+    padding: 20px;
+}
+
+.academic-ex-1 .box .content p.box-desc {
+    text-align: justify;
+}
+
+.academic-ex-1 .box img.img-fluid {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.academic-ex-1 .box h4.box-title {
+    color: #000041;
+    font-weight: 700;
+}
+
+.academic-ex-2 .accordion-group {
+    width: 100%;
+    max-width: 550px;
+    box-sizing:
+        border-box;
+    font-size: 14px;
+}
+
+.academic-ex-2 .acc-item {
+    background: #0d1b3e;
+    border: 1px solid #e8cdcf;
+    overflow: hidden;
+    box-shadow: 0 15px calc(15px * 2) rgba(247, 193, 193, 0.15);
+    transition: all 0.3s ease;
+}
+
+.academic-ex-2 .acc-item {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.academic-ex-2 .acc-item:last-child {
+    margin-bottom: 0;
+}
+
+.academic-ex-2 summary {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: #ffffff;
+    transition: background 0.2s ease;
+}
+
+.academic-ex-2 summary:hover {
+    background: #c41820;
+}
+
+.academic-ex-2 summary::-webkit-details-marker {
+    display: none;
+}
+
+.academic-ex-2 .acc-icon {
+    color: #e31e24;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.academic-ex-2 summary:hover .acc-icon {
+    color: #000041;
+}
+
+.academic-ex-2 .content-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background: #fcebec;
+}
+
+.academic-ex-2 .content-body {
+    padding: 20px;
+    color: #0d1b3e;
+    line-height: 1.6;
+}
+
+.academic-ex-2 .acc-item.is-open .acc-icon {
+    transform: rotate(45deg);
+}
+
+.academic-ex-2 img.img-fluid {
+    border-radius: 20px;
+}
+
+/* ---------- Limited hover animation (box lift + image zoom) ---------- */
+
+.academic-ex-1 .box {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.academic-ex-1 .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(13, 27, 62, 0.14);
+}
+
+.academic-ex-1 .box .image {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.academic-ex-1 .box .image img.img-fluid {
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.academic-ex-1 .box:hover .image img.img-fluid {
+    transform: scale(1.06);
+}
+
+.academic-ex-2 img.img-fluid {
+    transition: transform 0.4s ease;
+}
+
+.academic-ex-2 .col-12.col-md-6.col-lg-6:hover>img.img-fluid {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Academics Excellence Page - Responsive
+   (Desktop layout/design left untouched; breakpoints below the current
+   desktop layout, plus in-between widths from browser zoom above/below
+   100%, are adjusted so nothing overlaps or overflows.)
+   ========================================================================== */
+
+/* Large desktops / wide screens (zoom below 100% effectively lands here) */
+@media (min-width: 1400px) {
+    .academic-ex-1 .box .content {
+        padding: 24px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .academic-ex-1 .box .content {
+        padding: 18px;
+    }
+
+    .academic-ex-1 .box h4.box-title {
+        font-size: 19px;
+    }
+
+    .academic-ex-1 .box p.box-desc {
+        font-size: 15px;
+    }
+
+    .academic-ex-2 .accordion-group {
+        max-width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .academic-ex-1 .col-12.col-md-4.col-lg-4 {
+        margin-bottom: 24px;
+    }
+
+    .academic-ex-1 .col-12.col-md-4.col-lg-4:last-child {
+        margin-bottom: 0;
+    }
+
+    .academic-ex-2 .col-12.col-md-6.col-lg-6 {
+        margin-bottom: 24px;
+    }
+
+    .academic-ex-2 .col-12.col-md-6.col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .academic-ex-2 .accordion-group {
+        font-size: 13.5px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .academic-ex-1.py-5 {
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .academic-ex-1 .box h4.box-title {
+        font-size: 18px;
+    }
+
+    .academic-ex-1 .box p.box-desc {
+        font-size: 14.5px;
+        line-height: 1.6;
+    }
+
+    .academic-ex-1 .box:hover {
+        transform: translateY(-4px);
+    }
+
+    .academic-ex-2.py-5 {
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .academic-ex-2 summary span:first-child {
+        font-size: 14.5px;
+    }
+
+    .academic-ex-2 .content-body {
+        padding: 16px;
+        font-size: 14px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .academic-ex-1 .box .content {
+        padding: 16px;
+    }
+
+    .academic-ex-2 summary {
+        padding: 14px;
+    }
+
+    .academic-ex-2 .acc-item {
+        margin-bottom: 16px;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (above 100%) */
+@media (max-width: 400px) {
+    .academic-ex-1 .box h4.box-title {
+        font-size: 17px;
+    }
+
+    .academic-ex-1 .box p.box-desc {
+        font-size: 14px;
+    }
+
+    .academic-ex-2 summary span:first-child {
+        font-size: 14px;
+    }
+
+    .academic-ex-2 .acc-icon {
+        font-size: 14px;
+    }
+
+    .academic-ex-2 .content-body {
+        padding: 14px;
+        font-size: 13.5px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .academic-ex-1 .box,
+    .academic-ex-1 .box .image img.img-fluid,
+    .academic-ex-2 img.img-fluid {
+        transition: none !important;
+    }
+}
+
+.ex-1 .icon-list .list .content {
+    background: #fff;
+    padding: 14px;
+    border-radius: 20px;
+}
+
+.ex-1 ul.icon-list {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.ex-1 ul.icon-list .list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ex-1 ul.icon-list .list h4 {
+    font-weight: 600;
+    color: #000041;
+}
+
+.ex-1 ul.icon-list .list .icon-circle {
+    height: 64px;
+    width: 110px;
+    background: #000041;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ex-1 ul.icon-list::before {
+    content: "";
+    position: absolute;
+    background: #000041;
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    left: 30px;
+}
+
+.ex-1 img.img-fluid {
+    border-radius: 20px;
+}
+
+.ex-2{
+    background-color: #000041;
+}
+
+.ex-2 .box {
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ex-2 .box .content{
+    padding: 20px;
+}
+
+.ex-2 .box .content h4{
+    font-weight: 700;
+    color: #000041;
 }

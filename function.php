@@ -92,11 +92,7 @@ function template_header($title){
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="curriculam.php"">Curriculam</a></li>
                                             <li><a class="dropdown-item" href="academics-excellence.php">Academic Excellence</a></li>
-                                            <li><a class="dropdown-item" href="chairman-message.php">Chairman's Message</a></li>
-                                            <li><a class="dropdown-item" href="trustee-message.php">Management Trustee's Message </a></li>
-                                            <li><a class="dropdown-item" href="secretary-message.php">Secretary's Message</a></li>
-                                            <li><a class="dropdown-item" href="principal-message .php">Principal's Message </a></li>
-                                            <li><a class="dropdown-item" href="administrative-message.php">Administrative Officer's Message  </a></li>
+                                            <li><a class="dropdown-item" href="extra-curricular.php">Extra - Curricular Activities</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
