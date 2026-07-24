@@ -1,7 +1,6 @@
 <?php include "function.php"?>
 
-<!-- AOS (Animate On Scroll) library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 
 <?=template_header("Academics Excellance")?>
 <section class="page-banner" id="message">

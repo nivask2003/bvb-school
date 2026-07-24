@@ -3031,8 +3031,8 @@ body.lightbox-open {
     border-radius: 20px;
 }
 
-.ex-2{
-    background-color: #000041;
+.ex-2 .col-lg-3{
+    display: flex;
 }
 
 .ex-2 .box {
@@ -3040,13 +3040,473 @@ body.lightbox-open {
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 26px;
+    width: 100%;
+    height: 100%;
 }
 
-.ex-2 .box .content{
+.ex-2 .box .image img.img-fluid {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ex-2 .box .content {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ex-2 .box .content p {
+    text-align: center;
 }
 
 .ex-2 .box .content h4{
     font-weight: 700;
     color: #000041;
+}
+
+/* ---------- Limited hover animation (Extra-Curricular page) ---------- */
+
+.ex-1 ul.icon-list .list .icon-circle {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.ex-1 ul.icon-list .list:hover .icon-circle {
+    background-color: #E31E24;
+    transform: scale(1.05);
+}
+
+.ex-1 ul.icon-list .list .content {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.ex-1 ul.icon-list .list:hover .content {
+    box-shadow: 0 8px 20px rgba(0, 0, 65, 0.12);
+}
+
+.ex-1 img.img-fluid {
+    transition: transform 0.4s ease;
+}
+
+.ex-1 .col-12.col-md-6.col-lg-6:hover>img.img-fluid {
+    transform: scale(1.02);
+}
+
+.ex-2 .box {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 6px 16px rgba(13, 27, 62, 0.06);
+}
+
+.ex-2 .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(13, 27, 62, 0.14);
+}
+
+.ex-2 .box .image {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ex-2 .box .image img.img-fluid {
+    transition: transform 0.5s ease;
+    display: block;
+    width: 100%;
+}
+
+.ex-2 .box:hover .image img.img-fluid {
+    transform: scale(1.06);
+}
+
+/* ==========================================================================
+   Extra-Curricular Page - Responsive
+   (Desktop layout/design left untouched; breakpoints below the current
+   desktop layout, plus in-between widths from browser zoom above/below
+   100%, are adjusted so nothing overlaps or overflows.)
+   ========================================================================== */
+
+/* Large desktops / wide screens (zoom below 100% effectively lands here) */
+@media (min-width: 1400px) {
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 120px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 90px;
+        height: 56px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle i {
+        font-size: 18px;
+    }
+
+    .ex-1 ul.icon-list .list h4 {
+        font-size: 18px;
+    }
+
+    .ex-2 .box .content h4 {
+        font-size: 17px;
+    }
+
+    .ex-2 .box .content p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .ex-1 ul.icon-list::before {
+        left: 26px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 76px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle i {
+        font-size: 16px;
+    }
+
+    .ex-1 img.img-fluid {
+        margin-bottom: 24px;
+    }
+
+    .ex-2 .box {
+        margin-top: 20px;
+    }
+
+    .ex-2 .box .content {
+        padding: 16px;
+    }
+
+    .ex-2 .box .content h4 {
+        font-size: 16px;
+    }
+
+    .ex-2 .box .content p {
+        font-size: 13.5px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md) */
+@media (max-width: 767.98px) {
+    .ex-1.py-5 {
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .ex-1 ul.icon-list .list {
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 60px;
+        height: 44px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle i {
+        font-size: 15px;
+    }
+
+    .ex-1 ul.icon-list .list .content {
+        padding: 12px;
+    }
+
+    .ex-1 ul.icon-list .list h4 {
+        font-size: 16.5px;
+        margin-bottom: 6px;
+    }
+
+    .ex-1 ul.icon-list .list .content p {
+        font-size: 14px;
+    }
+
+    .ex-1 ul.icon-list::before {
+        left: 22px;
+    }
+
+    .ex-2.py-5 {
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .ex-2 .box:hover {
+        transform: translateY(-4px);
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .ex-1 ul.icon-list .list {
+        gap: 8px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 52px;
+        height: 40px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle i {
+        font-size: 14px;
+    }
+
+    .ex-1 ul.icon-list::before {
+        left: 18px;
+    }
+
+    .ex-2 .box .content {
+        padding: 14px;
+    }
+
+    .ex-2 .box .content h4 {
+        font-size: 15.5px;
+    }
+
+    .ex-2 .box .content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* Extra small phones / heavy browser zoom (above 100%) */
+@media (max-width: 400px) {
+    .ex-1 ul.icon-list .list .icon-circle {
+        width: 46px;
+        height: 36px;
+    }
+
+    .ex-1 ul.icon-list .list .icon-circle i {
+        font-size: 13px;
+    }
+
+    .ex-1 ul.icon-list .list h4 {
+        font-size: 15.5px;
+    }
+
+    .ex-1 ul.icon-list .list .content p {
+        font-size: 13.5px;
+    }
+
+    .ex-2 .box .content h4 {
+        font-size: 15px;
+    }
+
+    .ex-2 .box .content p {
+        font-size: 12.5px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .ex-1 ul.icon-list .list .icon-circle,
+    .ex-1 img.img-fluid,
+    .ex-2 .box,
+    .ex-2 .box .image img.img-fluid {
+        transition: none !important;
+    }
+}
+
+
+.activity-1 .box{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.activity-1 .box .image img.img-fluid{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activity-1 .box .content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.activity-1 .box .content h4{
+    color: #000041;
+    font-weight: 600;
+}
+
+.activity-1 .box .content p{
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* ---------- Limited hover animation (Activity page) ---------- */
+
+.activity-1 .box {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 6px 16px rgba(13, 27, 62, 0.06);
+}
+
+.activity-1 .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(13, 27, 62, 0.14);
+}
+
+.activity-1 .box .image {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activity-1 .box .image img.img-fluid {
+    transition: transform 0.5s ease;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity-1 .box:hover .image img.img-fluid {
+    transform: scale(1.06);
+}
+
+.activity-1 .box .row {
+    height: 100%;
+}
+
+/* ==========================================================================
+   Activity Page - Responsive
+   (Desktop layout/design left untouched; breakpoints below the current
+   desktop layout, plus in-between widths from browser zoom above/below
+   100%, are adjusted so nothing overlaps or overflows.)
+   ========================================================================== */
+
+/* Large desktops / wide screens (zoom below 100% effectively lands here) */
+@media (min-width: 1400px) {
+    .activity-1 .box .content {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .activity-1 .box .content h4 {
+        font-size: 19px;
+    }
+
+    .activity-1 .box .content p {
+        font-size: 15px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .activity-1 .row>.col-12.col-md-6.col-lg-6 {
+        margin-bottom: 24px;
+    }
+
+    .activity-1 .row>.col-12.col-md-6.col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .activity-1 .box .content {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+    }
+
+    .activity-1 .box:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md - image stacks above content) */
+@media (max-width: 767.98px) {
+    .activity-1.py-5 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .activity-1 .box .row {
+        height: auto;
+    }
+
+    .activity-1 .box .image img.img-fluid {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        height: 220px;
+    }
+
+    .activity-1 .box .content {
+        padding: 16px;
+    }
+
+    .activity-1 .box .content h4 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .activity-1 .box .content p {
+        font-size: 14.5px;
+        line-height: 1.6;
+        text-align: left;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .activity-1 .box .image img.img-fluid {
+        height: 190px;
+    }
+
+    .activity-1 .box .content {
+        padding: 14px;
+    }
+
+    .activity-1 .box .content h4 {
+        font-size: 17px;
+    }
+
+    .activity-1 .box .content p {
+        font-size: 14px;
+    }
+
+    .activity-1 .box:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Extra small phones / heavy browser zoom (above 100%) */
+@media (max-width: 400px) {
+    .activity-1 .box .image img.img-fluid {
+        height: 170px;
+    }
+
+    .activity-1 .box .content {
+        padding: 12px;
+    }
+
+    .activity-1 .box .content h4 {
+        font-size: 16px;
+    }
+
+    .activity-1 .box .content p {
+        font-size: 13.5px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .activity-1 .box,
+    .activity-1 .box .image img.img-fluid {
+        transition: none !important;
+    }
 }

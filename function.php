@@ -93,6 +93,7 @@ function template_header($title){
                                             <li><a class="dropdown-item" href="curriculam.php"">Curriculam</a></li>
                                             <li><a class="dropdown-item" href="academics-excellence.php">Academic Excellence</a></li>
                                             <li><a class="dropdown-item" href="extra-curricular.php">Extra - Curricular Activities</a></li>
+                                            <li><a class="dropdown-item" href="activity.php">Activity</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
