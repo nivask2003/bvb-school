@@ -127,7 +127,7 @@
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="200">
                     <article class="facility-card">
                         <div class="facility-card__image-wrap">
-                            <img src="https://picsum.photos/seed/indoor-games/1800/1200" class="facility-card__image" alt="Playground">
+                            <img src="assets/images/fac-9.webp" class="facility-card__image" alt="Playground">
                             <span class="facility-card__category">Recreation</span>
                         </div>
                         <div class="facility-card__body">

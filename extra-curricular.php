@@ -81,7 +81,7 @@
             <h2 class="section-title">Building Skills Through Sports</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-md-2 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-12 col-md-2 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="0">
                 <div class="box">
                     <div class="image">
                         <img src="assets/images/sports-1.webp" alt="" class="img-fluid">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-md-3 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="box">
                     <div class="image">
                         <img src="assets/images/football.webp" alt="" class="img-fluid">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 col-md-3 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="box">
                     <div class="image">
                         <img src="assets/images/cricket.webp" alt="" class="img-fluid">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-12 col-md-3 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="box">
                     <div class="image">
                         <img src="assets/images/volleyball.webp" alt="" class="img-fluid">

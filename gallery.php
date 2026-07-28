@@ -11,7 +11,7 @@
             <button class="btn" data-filter="campus">Campus</button>
             <button class="btn" data-filter="events">Events</button>
             <button class="btn" data-filter="sports">Sports</button>
-            <button class="btn" data-filter="cultural">Cultural</button>
+            <button class="btn" data-filter="acheivements">Acheivements</button>
         </div>
         <div class="gallery-container mt-5">
             <div class="row">
@@ -40,6 +40,181 @@
                     <img src="assets/images/g4.webp" alt="School Transport" class="img-fluid">
                     <div class="overlay">
                         <h4>School Transport</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="campus" data-aos="fade-left">
+                    <img src="assets/images/g5.webp" alt="Dinning Hall" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Dinning Hall</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="campus" data-aos="fade-left">
+                    <img src="assets/images/g6.webp" alt="Campus Courtyard" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Campus Courtyard</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="campus" data-aos="fade-left">
+                    <img src="assets/images/g7.webp" alt="Computer Lab" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Computer Lab</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="campus" data-aos="fade-left">
+                    <img src="assets/images/g8.webp" alt="Science Lab" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Science Lab</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g9.webp" alt="Fancy Dress Day" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Fancy Dress Day</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g10.webp" alt="Fancy Dress Day" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Fancy Dress Day</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g11.webp" alt="Krishna Jayanthi" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Krishna Jayanthi</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g12.webp" alt="Graduation Ceremony" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Graduation Ceremony</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g13.webp" alt="Graduation Ceremony" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Graduation Ceremony</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g14.webp" alt="Independence Day Celebration" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Independence Day Celebration</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g15.webp" alt="Independence Day Celebration" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Independence Day Celebration</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="events" data-aos="fade-left">
+                    <img src="assets/images/g16.webp" alt="Independence Day Celebration" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Independence Day Celebration</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g17.webp" alt="Annual Sports Meet" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Annual Sports Meet</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g18.webp" alt="Annual Sports Meet" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Annual Sports Meet</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g19.webp" alt="Annual Sports Meet" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Annual Sports Meet</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g20.webp" alt="Athletics" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Athletics</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g21.webp" alt="Football" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Football</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g22.webp" alt="Cricket" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Cricket</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g23.webp" alt="Volleyball" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Volleyball</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="sports" data-aos="fade-left">
+                    <img src="assets/images/g24.webp" alt="Basketball" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Basketball</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="acheivements" data-aos="fade-left">
+                    <img src="assets/images/g25.webp" alt="Award Presentation" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Award Presentation</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="acheivements" data-aos="fade-left">
+                    <img src="assets/images/g26.webp" alt="State-Level Award Ceremony" class="img-fluid">
+                    <div class="overlay">
+                        <h4>State-Level Award Ceremony</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="acheivements" data-aos="fade-left">
+                    <img src="assets/images/g27.webp" alt="Kindergarten Graduation" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Kindergarten Graduation</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="acheivements" data-aos="fade-left">
+                    <img src="assets/images/g28.webp" alt="Student Achievement Awards" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Student Achievement Awards</h4>
+                        <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 gallery-item" data-category="acheivements" data-aos="fade-left">
+                    <img src="assets/images/g29.webp" alt="Student Achievement Awards" class="img-fluid">
+                    <div class="overlay">
+                        <h4>Student Achievement Awards</h4>
                         <a href="javascript:void(0);" class="btn"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
                 </div>

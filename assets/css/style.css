@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@300;400;500;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif !important;
-    background-color: #FCEBEC !important;
+    font-family: 'Jost', sans-serif !important;
+    background-color: #FDF8F0 !important;
 }
 
 h1,
@@ -11,14 +11,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif !important;
 }
 
 span.badge {
     color: #6a0100;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Jost', sans-serif !important;
 }
 
 h2.section-title {
@@ -422,24 +422,6 @@ header .dropdown-item:focus,
     --black: #1A1A1A;
     --white: #FFFFFF;
 }
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-    background: var(--white);
-    color: var(--navy);
-    -webkit-font-smoothing: antialiased;
-}
-
 
 .facilities__header {
     max-width: 1400px;
@@ -1037,6 +1019,11 @@ ul.footer-links {
 
     section.py-5 {
         padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    section.home-2.py-5 {
+        padding-top: 1rem !important;
         padding-bottom: 3rem !important;
     }
 
@@ -3281,7 +3268,7 @@ body.lightbox-open {
 /* Extra small phones / heavy browser zoom (above 100%) */
 @media (max-width: 400px) {
     .ex-1 ul.icon-list .list .icon-circle {
-        width: 46px;
+        width: 36px;
         height: 36px;
     }
 
@@ -3509,4 +3496,601 @@ body.lightbox-open {
     .activity-1 .box .image img.img-fluid {
         transition: none !important;
     }
+}
+
+.admission-1 .section-title{
+    color: #000041;
+}
+
+.admission-1 .section-desc{
+    text-align: justify;
+}
+
+.admission-1 .box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    transition: all 0.3s ease-in-out;
+    border: 0   ;
+}
+
+.admission-1 .box .box-title{
+    color: #000041;
+}
+
+.admission-1 .box .icon-circle {
+    background: #000041;
+    color: #fff;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-1 .box:hover{
+    border: 2px solid #E31E24;
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 65, 0.12);
+}
+.admission-1 .box:hover .icon-circle{
+    background-color: #E31E24;
+}
+
+
+.admission-1 img.img-fluid{
+    border-radius: 20px;
+}
+
+.admission-2 {
+    background: linear-gradient(#0000419c, #000041bf), url(../images/admission-2.webp);
+}
+
+.admission-2 p.section-desc.text-white {
+    text-align: center;
+    width: 50%;
+}
+
+.admission-2 .icon-list .list .icon i{
+    color: #fff;
+}
+
+.admission-2 ul.icon-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admission-2 ul.icon-list li.list {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 36px;
+}
+
+.admission-2 ul.icon-list li.list .content h4, .admission-2 ul.icon-list .content p{
+    color: #fff;
+}
+
+.admission-2 ul.icon-list li.list .content p{
+    text-align: justify;
+}
+
+.admission-3 .process-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.admission-3 .process-cards .box {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-3 .process-cards .box .icon {
+    background: #000041;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.admission-3 .process-cards .box .box-desc{
+    text-align: center;
+}
+
+.admission-3 .process-cards .box:hover{
+    border: 2px solid #E31E24;
+    transform: translateY(-6px);
+}
+
+.admission-3 .process-cards .box .icon {
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-3 .process-cards .box:hover .icon {
+    background-color: #E31E24;
+}
+
+.admission-4{
+    background-color: #e31e2433;
+}
+
+.admission-4 .section-title{
+    color: #000041;
+}
+
+.admission-4 .icon-list .list i{
+    color: #000041;
+    font-size: 28px;
+}
+
+.admission-4 ul.icon-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.admission-4 ul.icon-list li.list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.admission-4 ul.icon-list li.list:hover {
+    transform: translateX(6px);
+}
+
+.admission-5 .section-desc{
+    width: 50%;
+    text-align: center;
+}
+
+.admission-5 .table{
+    background-color: #fff;
+}
+
+
+.admission-5 .table thead{
+    background-color: #000041;
+    color: #fff;
+}
+
+.admission-5 .table thead tr th{
+    padding: 14px;
+}
+
+.admission-6{
+    background-color: #000041;
+}
+
+.admission-6 .box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    height: 500px;
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-6 .box:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.admission-6 .box ul.icon-box {
+    padding: 0;
+    list-style-type: none;
+}
+
+.admission-6 .box ul.icon-box li.list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.admission-6 .box .icon-box .list .icon {
+    background-color: #000041;
+    height: 64px;
+    width: 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.admission-6 .box ul.icon-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.admission-6 .box ul.icon-list li.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+}
+
+.admission-7 .fee-timetable{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    margin-top: 30px;
+    gap: 30px;
+    position: relative;
+}
+
+.admission-7 .fee-timetable::before {
+    content: "";
+    position: absolute;
+    background: #000041;
+    height: 2px;
+    width: 100%;
+    bottom: 109px;
+}
+
+.admission-7 .fee-timetable .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-7 .fee-timetable .box:hover{
+    transform: translateY(-6px);
+}
+.admission-7 .fee-timetable .box .circle {
+    border: 4px solid #000041;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000041;
+    transition: all 0.3s ease-in-out;
+}
+
+.admission-7 .fee-timetable .box:hover .circle{
+    background-color: #E31E24;
+    border: 4px solid  #fff;
+}
+
+.admission-7 ul.icon-list {
+    padding: 0;
+    list-style-type: none;
+    background-color: #dddddd6e;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.admission-7 ul.icon-list li.list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.admission-8 .accordion-group{
+    max-width: none;
+}
+
+/* ==========================================================================
+   Admission Page - Responsive
+   (Desktop layout/design left untouched; breakpoints below the current
+   desktop layout, plus in-between widths from browser zoom above/below
+   100%, are adjusted so nothing overlaps, overflows, or gets cramped.)
+   ========================================================================== */
+
+/* Large desktops / wide screens (zoom below 100% effectively lands here) */
+@media (min-width: 1400px) {
+    .admission-2 p.section-desc.text-white {
+        width: 60%;
+    }
+
+    .admission-5 .section-desc {
+        width: 45%;
+    }
+}
+
+/* Laptops / small desktops */
+@media (max-width: 1199.98px) {
+    .admission-3 .process-cards {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 24px;
+    }
+
+    .admission-2 p.section-desc.text-white {
+        width: 70%;
+    }
+
+    .admission-5 .section-desc {
+        width: 65%;
+    }
+
+    .admission-6 .box {
+        height: 460px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991.98px) {
+    .admission-1 .box {
+        margin-bottom: 20px;
+    }
+
+    .admission-2 p.section-desc.text-white {
+        width: 85%;
+    }
+
+    .admission-3 .process-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .admission-4 .col-12.col-md-6.col-lg-6 .row {
+        margin-top: 24px;
+    }
+
+    .admission-5 .section-desc {
+        width: 80%;
+    }
+
+    .admission-6 .box {
+        height: auto;
+        min-height: 320px;
+        padding: 20px 16px;
+    }
+
+    .admission-6 .row.mt-5 > .col-12.col-md-6.col-lg-6 {
+        margin-bottom: 24px;
+    }
+
+    .admission-6 .row.mt-5 > .col-12.col-md-6.col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .admission-7 .fee-timetable::before {
+        bottom: 100px;
+    }
+}
+
+/* Tablets / large phones (below Bootstrap md - columns stack) */
+@media (max-width: 767.98px) {
+    .admission-1.py-5,
+    .admission-2.py-5,
+    .admission-3.py-5,
+    .admission-4.py-5,
+    .admission-5.py-5,
+    .admission-6.py-5,
+    .admission-7.py-5,
+    .academic-ex-2.py-5.admission-8 {
+        padding-top: 36px !important;
+        padding-bottom: 36px !important;
+    }
+
+    .admission-1 img.img-fluid {
+        margin-top: 16px;
+    }
+
+    .admission-1 .row > .col-12.col-md-6.col-lg-6:first-child {
+        margin-bottom: 24px;
+    }
+
+    .admission-2 p.section-desc.text-white {
+        width: 100%;
+    }
+
+    .admission-2 ul.icon-list li.list {
+        margin-bottom: 24px;
+    }
+
+    .admission-3 .process-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .admission-3 h2.section-title {
+        font-size: 28px;
+    }
+
+    .admission-4 .col-12.col-md-6.col-lg-6:first-child {
+        margin-bottom: 20px;
+    }
+
+    .admission-4 .col-12.col-md-6.col-lg-6 .col-12.col-md-6.col-lg-6:first-child {
+        margin-bottom: 10px;
+    }
+
+    .admission-5 .section-desc {
+        width: 100%;
+    }
+
+    .admission-5 .table {
+        font-size: 14px;
+    }
+
+    .admission-6 .box {
+        min-height: unset;
+    }
+
+    .admission-6 .box ul.icon-list li.list {
+        padding: 14px 0;
+    }
+
+    .admission-7 .fee-timetable {
+        gap: 14px;
+    }
+
+    .admission-7 .fee-timetable::before {
+        bottom: 86px;
+    }
+
+    .admission-7 .fee-timetable .box .circle {
+        height: 54px;
+        width: 54px;
+        font-size: 22px;
+    }
+
+    .admission-7 ul.icon-list li.list {
+        gap: 14px;
+        align-items: flex-start;
+    }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+    .admission-1 .box {
+        padding: 16px;
+    }
+
+    .admission-1 .box .icon-circle {
+        height: 54px;
+        width: 54px;
+        font-size: 24px;
+    }
+
+    .admission-2 .heading-center .section-title {
+        font-size: 26px;
+    }
+
+    .admission-3 .process-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .admission-3 .process-cards .box {
+        padding: 14px;
+    }
+
+    .admission-3 .process-cards .box .icon {
+        height: 42px;
+        width: 42px;
+    }
+
+    .admission-3 .process-cards .box .box-title {
+        font-size: 16px;
+    }
+
+    .admission-3 .process-cards .box .box-desc {
+        font-size: 13.5px;
+    }
+
+    .admission-5 .table thead tr th,
+    .admission-5 .table tbody tr td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .admission-6 .box ul.icon-box li.list .icon {
+        height: 54px;
+        width: 54px;
+    }
+
+    .admission-7 .fee-timetable {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+
+    .admission-7 .fee-timetable::before {
+        display: none;
+    }
+
+    .admission-7 .fee-timetable .box .circle {
+        height: 44px;
+        width: 44px;
+        font-size: 18px;
+    }
+
+    .admission-7 .fee-timetable .box h4 {
+        font-size: 15px;
+    }
+
+    .admission-7 .fee-timetable .box p {
+        font-size: 13px;
+    }
+
+    .admission-1 .box:hover,
+    .admission-3 .process-cards .box:hover,
+    .admission-7 .fee-timetable .box:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Extra small phones / heavy browser zoom (above 100%) */
+@media (max-width: 400px) {
+    .admission-3 .process-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .admission-3 .process-cards .box .box-title {
+        font-size: 15px;
+    }
+
+    .admission-5 .table thead tr th,
+    .admission-5 .table tbody tr td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .admission-6 .box {
+        padding: 16px 12px;
+    }
+
+    .admission-7 .fee-timetable::before {
+        bottom: 66px;
+    }
+
+    .admission-7 .fee-timetable .box .circle {
+        height: 38px;
+        width: 38px;
+        font-size: 16px;
+    }
+
+    .admission-7 .fee-timetable .box h4 {
+        font-size: 14px;
+    }
+    
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .admission-1 .box,
+    .admission-1 .box .icon-circle,
+    .admission-3 .process-cards .box,
+    .admission-3 .process-cards .box .icon,
+    .admission-4 ul.icon-list li.list,
+    .admission-6 .box,
+    .admission-7 .fee-timetable .box,
+    .admission-7 .fee-timetable .box .circle {
+        transition: none !important;
+    }
+}
+
+.gallery-1 .gallery-container .row {
+    row-gap: 30px;
 }

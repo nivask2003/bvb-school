@@ -106,22 +106,16 @@ function template_header($title){
                                             Admission
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Admission Procedure</a></li>
-                                            <li><a class="dropdown-item" href="#">Admission Form</a></li>
+                                            <li><a class="dropdown-item" href="admission.php">Admission Procedure</a></li>
+                                            <li><a class="dropdown-item" href="admission-form.php">Admission Form</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="gallery.php" tabindex="-1" aria-disabled="true">Gallery</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Career
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Career Guidance</a></li>
-                                            <li><a class="dropdown-item" href="career-form.php">Career Form</a></li>
-                                        </ul>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="career-form.php" tabindex="-1" aria-disabled="true">Career</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact.php" tabindex="-1" aria-disabled="true">Contact</a>

@@ -1,7 +1,7 @@
 <?php include "function.php" ?>
 <?=template_header("Principal's Message e - Bhaarath Vidhya Bhavan")?>
 <section class="page-banner" id="message">
-    <h1 class="page-title">Principal's Message e </h1>
+    <h1 class="page-title">Principal's Message</h1>
 </section>
 <section class="message-1 py-5">
     <div class="container">
