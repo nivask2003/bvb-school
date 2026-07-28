@@ -12,64 +12,72 @@
             <div class="col-12 col-md-6 col-lg-6" data-aos="fade-right">
                 <img src="assets/images/community.webp" alt="" class="img-fluid">
             </div>
-            <div class="col-12 col-md-6 col-lg-6" data-aos="fade-left">
-                <ul class="icon-list">
-                    <li class="list" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-12 col-md-6 col-lg-6 icon-list" data-aos="fade-left">
+                <div class="row list">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <div class="icon-circle">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <div class="content">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="box">
                             <h4>NCC - National Cadet Corps</h4>
-                            <p>NCC builds discipline, leadership and patriotism through training, camps and service,
-                                shaping confident young citizens.</p>
+                            <p>NCC builds discipline, leadership and patriotism through training, camps and service, shaping confident young citizens.</p>
                         </div>
-
-                    </li>
-                    <li class="list" data-aos="fade-up" data-aos-delay="100">
+                    </div>
+                </div>
+                <div class="row list">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <div class="icon-circle">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <div class="content">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="box">
                             <h4>NSS - National Service Scheme</h4>
-                            <p>NSS encourages community service, environmental care and social responsibility among
-                                students through meaningful activities.</p>
+                            <p>NSS encourages community service, environmental care and social responsibility among students through meaningful activities.</p>
                         </div>
-
-                    </li>
-                    <li class="list" data-aos="fade-up" data-aos-delay="150">
+                    </div>
+                </div>
+                <div class="row list">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <div class="icon-circle">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <div class="content">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="box">
                             <h4>Scouts – Bharat Scouts</h4>
-                            <p>Scouts build character, leadership, teamwork and life skills through outdoor adventures
-                                and community service for everyone!..</p>
+                            <p>Scouts build character, leadership, teamwork and life skills through outdoor adventures and community service for everyone!..</p>
                         </div>
-
-                    </li>
-                    <li class="list" data-aos="fade-up" data-aos-delay="200">
+                    </div>
+                </div>
+                <div class="row list">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <div class="icon-circle">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <div class="content">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="box">
                             <h4>Guides – Bharat Guides</h4>
-                            <p>Guides programme builds confidence, discipline, leadership and social responsibility
-                                through learning and service for life.</p>
+                            <p>Guides programme builds confidence, discipline, leadership and social responsibility through learning and service for life.</p>
                         </div>
-
-                    </li>
-                    <li class="list" data-aos="fade-up" data-aos-delay="250">
+                    </div>
+                </div>
+                <div class="row list">
+                    <div class="col-12 col-md-2 col-lg-2">
                         <div class="icon-circle">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <div class="content">
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="box">
                             <h4>JRC – Junior Red Cross</h4>
-                            <p>Junior Red Cross promotes compassion through first aid, health awareness and community
-                                service for students.</p>
+                            <p>Junior Red Cross promotes compassion through first aid, health awareness and community service for students. </p>
                         </div>
-
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
