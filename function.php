@@ -327,7 +327,7 @@ function template_footer(){
                 // doesn't flicker while still at the top of the page.
                 if (currentScrollY > headerHeight) {
                     if (currentScrollY > lastScrollY) {
-                        header.classList.add('header-hidden');
+                        header.classList.remove('header-hidden');
                     } else {
                         header.classList.remove('header-hidden');
                     }
