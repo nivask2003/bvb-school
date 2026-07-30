@@ -99,7 +99,7 @@
 
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 animate-box" data-animate="animate__fadeInUp">
+                <div class="col-12 col-md-4 col-lg-4 second animate-box" data-animate="animate__fadeInUp">
                     <img src="assets/images/why-choose.webp" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 third animate-box" data-animate="animate__fadeInRight">
@@ -179,8 +179,8 @@
             <span class="badge text-danger">Our Academics</span>
             <h2 class="section-title text-white">Academic Excellence at Every Stage</h2>
 </header>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 animate-box" data-animate="animate__fadeInLeft">
+            <div class="row academic-card">
+                <div class="col-12 col-md-6 col-lg-6 animate-box aca-card" data-animate="animate__fadeInLeft">
                     <div class="aca-box">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
@@ -188,7 +188,7 @@
                                 <p class="box-section">Our Pre-Primary programme nurtures young learners through joyful,
                                     activity-based education, building language, numeracy, creativity, confidence and
                                     social skills for Primary school with care!!! </p>
-                                <a href="academics.php" class="btn">Read More</a>
+                                <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <img src="assets/images/pre-primary.webp" alt="" class="img-fluid">
@@ -196,13 +196,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 animate-box" data-animate="animate__fadeInRight">
+                <div class="col-12 col-md-6 col-lg-6 animate-box aca-card" data-animate="animate__fadeInRight">
                     <div class="aca-box">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
                                 <h4 class="box-title">Primary</h4>
                                 <p class="box-section">Our Primary School builds strong academic foundations through engaging learning, classrooms, value education and co-curricular activities, fostering confident, creative and disciplined students. </p>
-                                <a href="academics.php" class="btn">Read More</a>
+                                <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <img src="assets/images/primary.webp" alt="" class="img-fluid">
@@ -211,14 +211,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-12 col-md-6 col-lg-6 animate-box" data-animate="animate__fadeInLeft">
+            <div class="row mt-5 academic-card">
+                <div class="col-12 col-md-6 col-lg-6 animate-box aca-card" data-animate="animate__fadeInLeft">
                     <div class="aca-box">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
                                 <h4 class="box-title">Middle </h4>
                                 <p class="box-section">Middle School develops critical thinking, subject knowledge, leadership through concept-based learning, practical activities and values, preparing students for higher studies and future success.</p>
-                                <a href="academics.php" class="btn">Read More</a>
+                                <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <img src="assets/images/middle.webp" alt="" class="img-fluid">
@@ -226,13 +226,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 animate-box" data-animate="animate__fadeInRight">
+                <div class="col-12 col-md-6 col-lg-6 animate-box aca-card" data-animate="animate__fadeInRight">
                     <div class="aca-box">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6">
                                 <h4 class="box-title">High School</h4>
                                 <p class="box-section">High School prepares students for State Board exams through expert coaching, regular tests, mentoring, practical learning and career guidance, building confidence for academic success. with care </p>
-                                <a href="academics.php" class="btn">Read More</a>
+                                <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <img src="assets/images/high.webp" alt="" class="img-fluid">
@@ -241,14 +241,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5" style="display:flex; justify-content:center">
-                <div class="col-12 col-md-6 col-lg-6 animate-box" data-animate="animate__fadeInUp">
+            <div class="row mt-5 academic-card" style="display:flex; justify-content:center">
+                <div class="col-12 col-md-6 col-lg-6 animate-box aca-card" data-animate="animate__fadeInUp">
                     <div class="aca-box">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6 ">
                                 <h4 class="box-title">Higher Secondary </h4>
                                 <p class="box-section">Higher Secondary prepares students for higher education and careers through quality teaching, practical learning, expert guidance and exam support, building confidence for lifelong success. well</p>
-                                <a href="academics.php" class="btn">Read More</a>
+                                <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
                                 <img src="assets/images/higher-secondary.webp" alt="" class="img-fluid">

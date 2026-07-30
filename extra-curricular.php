@@ -89,7 +89,7 @@
             <h2 class="section-title">Building Skills Through Sports</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-md-2 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-12 col-md-3 col-lg-3 mt-4" data-aos="fade-up" data-aos-delay="0">
                 <div class="box">
                     <div class="image">
                         <img src="assets/images/sports-1.webp" alt="" class="img-fluid">

@@ -112,9 +112,131 @@ h2.section-title {
 }
 
 
+.main-header {
+    position: relative;
+    z-index: 1020;
+    transition: transform 0.35s ease;
+}
+
+.main-header.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Slides the header fully out of view when scrolling down,
+   and .header-hidden is removed (transform resets) when scrolling up. */
+.main-header.header-hidden {
+    transform: translateY(-100%);
+}
+
 header .navbar {
     background-color: #fff;
     height: 100px;
+}
+
+header .navbar .container {
+    flex-wrap: nowrap;
+}
+
+/* Keep the hamburger button visible and un-squeezed on mobile/tablet,
+   regardless of how wide the logo tries to render. */
+.navbar-toggler {
+    flex-shrink: 0;
+    z-index: 1030;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 65, 0.25) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(227, 30, 36, 0.25);
+}
+
+@media (max-width: 991.98px) {
+    header .navbar {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    header .navbar .img-fluid {
+        width: auto;
+        max-width: 220px;
+        height: auto;
+    }
+}
+
+/* ===== Mobile / tablet slide-in side menu ===== */
+.mobile-sidebar {
+    width: 300px;
+    background-color: #fff;
+}
+
+.mobile-sidebar-logo {
+    width: 150px;
+}
+
+.mobile-sidebar .offcanvas-header {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-list {
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav-list .nav-item {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.mobile-nav-list .nav-link,
+.mobile-accordion-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 4px;
+    color: rgb(0 0 65);
+    font-weight: 600;
+    background: none;
+    border: 0;
+    text-align: left;
+}
+
+.mobile-accordion-toggle i {
+    transition: transform 0.25s ease;
+    font-size: 14px;
+}
+
+.mobile-accordion-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.mobile-submenu {
+    list-style: none;
+    padding-left: 12px;
+    margin: 0 0 8px;
+}
+
+.mobile-submenu .dropdown-item {
+    padding: 8px 6px;
+    white-space: normal;
+    color: rgb(0 0 65 / 80%);
+}
+
+.mobile-submenu .dropdown-item.active {
+    background-color: #E31E24 !important;
+    color: #fff !important;
+    border-radius: 6px;
+}
+
+/* Ensure the desktop toggler button styling still hides correctly above lg */
+@media (min-width: 992px) {
+    #mobileSidebar {
+        display: none !important;
+    }
 }
 
 header .navbar .img-fluid {
@@ -270,6 +392,23 @@ header .dropdown-item:focus,
 .home-2 .box h5 {
     color: #0D1B3E;
     font-weight: bold;
+}
+
+/* On desktop the "20+ Years of caring..." card is deliberately
+   offset with left: 282px so it overlaps the photo. Below the lg
+   breakpoint the column is far narrower than 282px, so that fixed
+   offset pushes the card off the right edge of the screen and
+   creates horizontal overflow (visible as cropped text and a blank
+   gap on the right). Switch it to a normal, in-flow card instead. */
+@media (max-width: 991.98px) {
+    .home-2 .box {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        width: fit-content;
+    }
 }
 
 .home-2 .section-desc {
@@ -573,6 +712,13 @@ header .dropdown-item:focus,
     overflow: hidden;
     isolation: isolate;
     transition: box-shadow 0.5s ease;
+    /* overflow:hidden + border-radius alone can fail to clip a child
+       during a transform animation (the image zoom on hover), letting
+       the image/overlay bleed past the rounded corners in some
+       browsers. Forcing a mask-based clip fixes it reliably. */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
 }
 
 @media (min-width: 640px) {
@@ -938,6 +1084,8 @@ ul.footer-links {
 
     .facilities__header {
         gap: 15px;
+        display: flex;
+        justify-content: center;
     }
 
     .home-5 .mt-5 {
@@ -972,26 +1120,13 @@ ul.footer-links {
         margin: 0 auto;
     }
 
-    body,
-    html {
-        overflow-x: hidden;
-    }
-
     .home-5 .btn {
         display: none !important;
     }
 
-    .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 1;
-        align-items: center;
-        z-index: 999;
-        background: #fff;
-        padding: 15px;
-    }
-
     header .navbar .img-fluid {
-        width: 260px;
+        width: auto;
+        max-width: 170px;
     }
 
     section h2.section-title {
@@ -1669,8 +1804,15 @@ section.about-2.py-5 {
 
     .trustee-1 ul.image-box .box {
         flex: 1 1 150px;
-        max-width: 180px;
+        max-width: 126px;
         gap: 14px;
+    }
+    .trustee-1 ul.image-box .box .content h4.name{
+        font-size: 16px;
+    }
+
+    .trustee-1 ul.image-box .box .content p.role{
+        font-size: 14px;
     }
 }
 
@@ -2160,7 +2302,7 @@ body.lightbox-open {
     }
 
     .gallery-1 .gallery-container .overlay {
-        width: 91%;
+        width: 94%;
     }
 
     .gallery-1 .gallery-container .overlay .btn {
@@ -2288,7 +2430,7 @@ body.lightbox-open {
 
 .facilities-2 {
     padding-top: 90px;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .facilities-2__container {
@@ -2696,9 +2838,12 @@ body.lightbox-open {
     }
 }
 
+
+
 .academic-ex-1 .box {
     background: #fff;
     border-radius: 20px;
+    height: 500px;
 }
 
 .academic-ex-1 .box .content {
@@ -2717,6 +2862,10 @@ body.lightbox-open {
 .academic-ex-1 .box h4.box-title {
     color: #000041;
     font-weight: 700;
+}
+
+.academic-ex-2.py-5{
+    padding-top: 0 !important;
 }
 
 .academic-ex-2 .accordion-group {
@@ -2865,6 +3014,7 @@ body.lightbox-open {
 @media (max-width: 991.98px) {
     .academic-ex-1 .col-12.col-md-4.col-lg-4 {
         margin-bottom: 24px;
+        width: 50%;
     }
 
     .academic-ex-1 .col-12.col-md-4.col-lg-4:last-child {
@@ -3401,6 +3551,12 @@ body.lightbox-open {
 @media (max-width: 991.98px) {
     .activity-1 .row>.col-12.col-md-6.col-lg-6 {
         margin-bottom: 24px;
+        width: 100%;
+    }
+
+    img.img-fluid {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: none  !important;
     }
 
     .activity-1 .row>.col-12.col-md-6.col-lg-6:last-child {
@@ -3411,6 +3567,7 @@ body.lightbox-open {
         padding-top: 16px;
         padding-bottom: 16px;
         padding-right: 16px;
+        padding-left: 16px;
     }
 
     .activity-1 .box:hover {
@@ -3900,10 +4057,6 @@ body.lightbox-open {
         margin-top: 16px;
     }
 
-    .admission-1 .row > .col-12.col-md-6.col-lg-6:first-child {
-        margin-bottom: 24px;
-    }
-
     .admission-2 p.section-desc.text-white {
         width: 100%;
     }
@@ -3919,10 +4072,6 @@ body.lightbox-open {
 
     .admission-3 h2.section-title {
         font-size: 28px;
-    }
-
-    .admission-4 .col-12.col-md-6.col-lg-6:first-child {
-        margin-bottom: 20px;
     }
 
     .admission-4 .col-12.col-md-6.col-lg-6 .col-12.col-md-6.col-lg-6:first-child {
@@ -4136,4 +4285,110 @@ body.lightbox-open {
     height: 100%;
     width: 2px;
     left: 43px;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.home-2 .col-12.col-md-6.col-lg-6.animate-box.animate__animated.animate__fadeInRight.show {
+    padding-left: 24px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e43740 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .row.academic-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 0 !important;
+}
+
+    .row.academic-card .col-12.col-md-6.col-lg-6.aca-card {
+    width: 91% !important; 
+    padding-left: 0 !important;
+    margin-top: 20px;
+}
+
+
+.home-3 .col-12.col-md-4.col-lg-4{
+    width: 100%;
+}
+
+.home-3 .first .box__icon-box{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 57px;
+}
+
+.home-3 .second{
+    display: flex;
+    justify-content: center;
+}
+
+.home-3 .third{
+    margin-top: 20px;
+}
+
+.home-3 .third .box__icon-box{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 38px;
+}
+
+.home-3 .third .box__content {
+    padding-left: 108px;
+}
+
+.ex-2 .col-md-3{
+    width: 50% !important;
+}
+
+.gallery-1 .col-md-3{
+    width: 33% !important;
+}
+}
+
+.about-6.py-5{
+    padding-top: 0 !important;
+}
+
+@media(max-width: 482px){
+    .about-1 .col-12.col-md-7.col-lg-7.aos-init.aos-animate {
+    margin-top: 28px;
+}
+
+.about-1 .col-12.col-md-6.col-lg-6.aos-init.aos-animate {
+    margin-top: -7px;
+}
+
+.message-1 .col-12.col-md-4.col-lg-4.aos-init.aos-animate {
+    display: flex;
+    justify-content: center;
+}
+}
+
+.about-3 span.badge {
+    padding-left: 0;
+}  
+
+.about-6 .heading-center{
+    margin-bottom: 20px !important;
+}
+
+.ex-1 h2{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 482px){
+    .admission-7 .heading-center h2{
+        text-align: center;
+    }
 }

@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <span class="badge">Admission Overview</span>
-                <h2 class="section-title">Welcome to a nurturing academic home</h2>
+                <h2 class="section-title">Welcome to a Nurturing Academic Home</h2>
                 <p class="section-desc">Bhaarath Vidhya Bhavan Matriculation Higher Secondary School welcomes students
                     into a nurturing and academically enriching environment where learning, discipline, and character
                     development go hand in hand. Admissions are offered based on the availability of seats and in
@@ -62,7 +62,7 @@
     <div class="container">
         <div class="heading-center">
             <span class="badge text-danger">Eligibility</span>
-            <h2 class="section-title text-white">Who can apply</h2>
+            <h2 class="section-title text-white">Who Can Apply?</h2>
             <p class="section-desc text-white">Admissions are granted to eligible students based on age, previous
                 academic records, and seat availability — following the guidelines of the Government of Tamil Nadu.</p>
         </div>
@@ -163,7 +163,7 @@
 <section class="admission-3 py-5">
     <div class="container">
         <span class="badge">Admission Process</span>
-        <h2 class="section-title">Six simple steps to enrolment</h2>
+        <h2 class="section-title">Six Simple Steps to Enrollment</h2>
         <div class="process-cards">
             <div class="box">
                 <span class="badge">01</span>
@@ -227,7 +227,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <span class="badge">Documents</span>
-                <h2 class="section-title">Documents required at admission</h2>
+                <h2 class="section-title">Documents Required for Admission</h2>
                 <p class="section-desc">Please bring the following documents in original along with photocopies during the admission process.</p>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
@@ -258,7 +258,7 @@
     <div class="container">
         <div class="heading-center">
             <span class="badge">Age Criteria</span>
-            <h2 class="section-title">Minimum age for each class</h2>
+            <h2 class="section-title">Minimum Age for Each Class</h2>
             <p class="section-desc">The school follows the age norms prescribed by the Government of Tamil Nadu.</p>
         </div>
         <table class="table">
@@ -283,7 +283,7 @@
     <div class="container">
         <div class="heading-center">
             <span class="badge text-danger">School Timings</span>
-            <h2 class="section-title text-white">A balanced daily schedule</h2>
+            <h2 class="section-title text-white">A Balanced Daily Schedule</h2>
         </div>
         <div class="row mt-5">
             <div class="col-12 col-md-6 col-lg-6">
@@ -335,7 +335,7 @@
     <div class="container">
         <div class="heading-center">
             <span class="badge">Fee Payment</span>
-            <h2 class="section-title">Convenient term-wise schedule</h2>   
+            <h2 class="section-title">Convenient Term-wise Fee Schedule</h2>   
         </div>
         <div class="fee-timetable">
                 <div class="box">
@@ -370,7 +370,7 @@
     <div class="container">
         <div class="heading-center">
             <span class="badge">FAQs</span>
-            <h2 class="section-title">Frequently asked questions</h2>
+            <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
         <div class="accordion-group mt-4">
                     <details class="acc-item" data-aos="fade-up" data-aos-duration="600">
