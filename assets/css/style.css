@@ -4356,6 +4356,11 @@ html, body{
 .gallery-1 .col-md-3{
     width: 33% !important;
 }
+
+.hero-section .carousel-control-prev {
+    left: 81% !important;
+    top: 94%;
+}
 }
 
 .about-6.py-5{
