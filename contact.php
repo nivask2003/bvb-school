@@ -42,7 +42,7 @@
                 <img src="assets/images/contact-us.webp" alt="" class="img-fluid" style="border-radius: 20px">
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-                <iframe aria-label='CONTACT FORM' frameborder="0" style="height:904px;width:99%;border:none;" src='https://forms.zohopublic.in/bhaarathvidhyabhavanmatricula1/form/CONTACTFORM/formperma/TDkSxn57AxsppIjjasL9olOaUsyhWNpGc8n3E01KSkM' >
+                <iframe aria-label='CONTACT FORM' frameborder="0" style="height:100%;width:99%;border:none;" src='https://forms.zohopublic.in/bhaarathvidhyabhavanmatricula1/form/CONTACTFORM/formperma/TDkSxn57AxsppIjjasL9olOaUsyhWNpGc8n3E01KSkM' >
 </iframe>
             </div>
         </div>

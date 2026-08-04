@@ -89,7 +89,7 @@
                         <div class="box__bg c1"></div>
                         <div class="box__content">
                             <h4 class="box__title">Modern Campus</h4>
-                            <p class="box__text">Modern campus with smart classrooms and sports facilities.</p>
+                            <p class="box__text">Modern campus with smart classrooms and sports.</p>
                         </div>
                         <div class="box__icon-box"><span class="box__icon"><svg xmlns="http://www.w3.org/2000/svg"
                                     height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
@@ -247,7 +247,7 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-6 ">
                                 <h4 class="box-title">Higher Secondary </h4>
-                                <p class="box-section">Higher Secondary prepares students for higher education and careers through quality teaching, practical learning, expert guidance and exam support, building confidence for lifelong success. well</p>
+                                <p class="box-section">Higher Secondary prepares students for higher education and careers through quality teaching, practical learning, expert guidance and exam support, building confidence for lifelong success.</p>
                                 <a href="curriculam.php" class="btn">Read More</a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-6">
